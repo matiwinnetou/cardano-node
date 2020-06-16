@@ -6,7 +6,7 @@
 {-# LANGUAGE RankNTypes        #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 
-module Cardano.Config.Byron.Protocol
+module Cardano.Api.Protocol.Byron
   (
     -- * Protocol exposing the specific type
     -- | Use this when you need the specific instance

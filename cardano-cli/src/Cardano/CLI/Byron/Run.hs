@@ -24,7 +24,7 @@ import           Cardano.Chain.UTxO (TxIn, TxOut)
 import qualified Cardano.Crypto.Hashing as Crypto
 import qualified Cardano.Crypto.Signing as Crypto
 
-import           Cardano.Config.Protocol (CardanoEra, RealPBFTError,
+import           Cardano.Api.Protocol.Types (CardanoEra, RealPBFTError,
                    renderRealPBFTError)
 import           Cardano.Config.Types
 

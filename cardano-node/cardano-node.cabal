@@ -48,6 +48,7 @@ library
                      , base >=4.12 && <5
                      , bytestring
                      , deepseq
+                     , cardano-api
                      , cardano-config
                      , cardano-ledger
                      , cardano-prelude
@@ -141,6 +142,7 @@ executable chairman
                      , async
                      , bytestring
                      , containers
+                     , cardano-api
                      , cardano-config
                      , cardano-prelude
                      , contra-tracer

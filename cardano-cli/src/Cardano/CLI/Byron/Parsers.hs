@@ -63,7 +63,7 @@ import           Cardano.Config.Parsers
                    (parseIntegral, parseFraction, parseLovelace, readDouble,
                     parseFilePath,  parseSigningKeyFile,
                     parseGenesisFile, command', parseFlag')
-import           Cardano.Config.Protocol (CardanoEra(..))
+import           Cardano.Api.Protocol.Types (CardanoEra(..))
 
 import           Cardano.CLI.Byron.Commands
 import           Cardano.CLI.Byron.Genesis

@@ -3,7 +3,7 @@
 
 {-# OPTIONS_GHC -Wno-orphans  #-}
 
-module Cardano.Config.Cardano.Protocol
+module Cardano.Api.Protocol.Cardano
   (
     -- * Protocol exposing the specific type
     -- | Use this when you need the specific instance
@@ -54,8 +54,8 @@ import           Cardano.TracingOrphanInstances.Byron ()
 import           Cardano.TracingOrphanInstances.Shelley ()
 import           Cardano.TracingOrphanInstances.HardFork ()
 
-import qualified Cardano.Config.Byron.Protocol as Byron
-import qualified Cardano.Config.Shelley.Protocol as Shelley
+import qualified Cardano.Api.Protocol.Byron as Byron
+import qualified Cardano.Api.Protocol.Shelley as Shelley
 
 
 --TODO: move ToObject tracing instances to Cardano.TracingOrphanInstances.Consensus
@@ -202,4 +202,3 @@ renderCardanoProtocolInstantiationError
 renderCardanoProtocolInstantiationError
   (CardanoProtocolInstantiationErrorShelley err) =
     Shelley.renderShelleyProtocolInstantiationError err
-

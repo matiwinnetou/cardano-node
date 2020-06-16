@@ -6,7 +6,7 @@
 {-# LANGUAGE RankNTypes        #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 
-module Cardano.Config.Shelley.Protocol
+module Cardano.Api.Protocol.Shelley
   (
     -- * Protocol exposing the specific type
     -- | Use this when you need the specific instance

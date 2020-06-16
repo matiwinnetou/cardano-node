@@ -16,7 +16,7 @@ import qualified Data.Text as Text
 
 
 import qualified Cardano.Binary as Binary
-import           Cardano.Config.Protocol
+import           Cardano.Api.Protocol.Types
                    (CardanoEra(..), RealPBFTError, renderRealPBFTError)
 import           Cardano.Config.Types
 import           Cardano.Chain.Update

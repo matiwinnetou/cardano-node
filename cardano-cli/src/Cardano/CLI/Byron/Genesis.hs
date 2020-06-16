@@ -46,7 +46,7 @@ import qualified Cardano.Chain.Genesis as Genesis
 import           Cardano.Chain.Genesis (GeneratedSecrets(..))
 import qualified Cardano.Chain.UTxO as UTxO
 
-import           Cardano.Config.Protocol (CardanoEra(..))
+import           Cardano.Api.Protocol.Types (CardanoEra(..))
 import           Cardano.Config.Types (GenesisFile(..))
 import           Cardano.Crypto (SigningKey (..))
 import qualified Cardano.Crypto as Crypto
@@ -243,4 +243,3 @@ writeSecrets outDir prefix suffix secretOp xs =
 #else
     setPermissions filename (emptyPermissions {readable = True})
 #endif
-

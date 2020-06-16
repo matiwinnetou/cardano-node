@@ -11,7 +11,7 @@ import           Control.Tracer (stdoutTracer)
 import           Ouroboros.Network.Block (BlockNo)
 
 import           Options.Applicative
-import           Cardano.Config.Protocol
+import           Cardano.Api.Protocol.Types
                    (SomeConsensusProtocol(..), mkConsensusProtocol,
                     renderProtocolInstantiationError)
 import           Cardano.Config.Types
@@ -88,4 +88,3 @@ opts = info (parseChairmanArgs <**> helper)
               \if Shelly nodes find consensus and do expected progress."
   <> header "Chairman sits in a room full of Shelley nodes, and checks \
             \if they are all behaving ...")
-

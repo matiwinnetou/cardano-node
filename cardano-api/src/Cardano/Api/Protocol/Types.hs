@@ -6,7 +6,7 @@
 {-# LANGUAGE RankNTypes        #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 
-module Cardano.Config.Protocol
+module Cardano.Api.Protocol.Types
   (
     -- * The enumeration of supported protocols
     Protocol(..)
@@ -44,10 +44,10 @@ import           Cardano.Config.Types
                     SomeNodeClientProtocol(..), TraceConstraints)
 import           Cardano.Chain.Slotting (EpochSlots(..))
 
-import           Cardano.Config.Byron.Protocol
-import           Cardano.Config.Mock.Protocol
-import           Cardano.Config.Shelley.Protocol
-import           Cardano.Config.Cardano.Protocol
+import           Cardano.Api.Protocol.Byron
+import           Cardano.Api.Protocol.Cardano
+import           Cardano.Api.Protocol.Mock
+import           Cardano.Api.Protocol.Shelley
 
 import qualified Ouroboros.Consensus.Cardano as Consensus
 

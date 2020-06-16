@@ -81,7 +81,7 @@ import qualified Ouroboros.Consensus.Storage.ChainDB as ChainDB
 import           Ouroboros.Consensus.Storage.ImmutableDB (ValidationPolicy (..))
 import           Ouroboros.Consensus.Storage.VolatileDB (BlockValidationPolicy (..))
 
-import           Cardano.Config.Protocol
+import           Cardano.Api.Protocol.Types
                    (SomeConsensusProtocol(..), mkConsensusProtocol,
                     renderProtocolInstantiationError)
 import           Cardano.Config.Topology

@@ -3,7 +3,7 @@
 {-# LANGUAGE NamedFieldPuns    #-}
 {-# LANGUAGE OverloadedStrings #-}
 
-module Cardano.Config.Mock.Protocol
+module Cardano.Api.Protocol.Mock
   (
     -- * Protocols exposing the specific type
     -- | Use these when you need the specific instance

@@ -29,7 +29,7 @@ import           Cardano.Chain.Update
                     SoftforkRule(..), SoftwareVersion(..), SystemTag(..), recoverUpId,
                     signProposal)
 import           Cardano.Config.Types
-import           Cardano.Config.Protocol (CardanoEra(..))
+import           Cardano.Api.Protocol.Types (CardanoEra(..))
 import           Ouroboros.Consensus.Util.Condense (condense)
 import           Cardano.Crypto.Signing (SigningKey, noPassSafeSigner)
 import           Ouroboros.Consensus.Byron.Ledger.Block (ByronBlock)
