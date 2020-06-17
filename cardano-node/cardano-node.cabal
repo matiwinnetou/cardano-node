@@ -34,6 +34,9 @@ library
 
   exposed-modules:     Cardano.Common.Help
                        Cardano.Node.Features.Node
+                       Cardano.Node.Protocol.Byron
+                       Cardano.Node.Protocol.Cardano
+                       Cardano.Node.Protocol.Shelley
                        Cardano.Node.Run
                        Cardano.Node.Shutdown
                        Cardano.Tracing.Peer
@@ -50,6 +53,7 @@ library
                      , deepseq
                      , cardano-api
                      , cardano-config
+                     , cardano-crypto-wrapper
                      , cardano-ledger
                      , cardano-prelude
                      , cardano-shell
@@ -68,6 +72,7 @@ library
                      , ouroboros-consensus
                      , ouroboros-consensus-byron
                      , ouroboros-consensus-cardano
+                     , ouroboros-consensus-shelley
                      , ouroboros-network
                      , ouroboros-network-framework
                      , process
