@@ -37,6 +37,7 @@ library
                        Cardano.Node.Protocol.Byron
                        Cardano.Node.Protocol.Cardano
                        Cardano.Node.Protocol.Shelley
+                       Cardano.Node.Protocol.SomeConsensusProtocol
                        Cardano.Node.Run
                        Cardano.Node.Shutdown
                        Cardano.Tracing.Peer

@@ -1,3 +1,5 @@
+{-# LANGUAGE NamedFieldPuns #-}
+
 module Cardano.Node.Protocol.SomeConsensusProtocol
   ( mkConsensusProtocol
   ) where
@@ -6,22 +8,18 @@ import           Cardano.Prelude
 
 import           Control.Monad.Trans.Except (ExceptT)
 import           Control.Monad.Trans.Except.Extra (firstExceptT)
-import qualified Data.Text as Text
 
 import           Cardano.Config.Types
                    (NodeConfiguration(..), NodeProtocolConfiguration(..),
                     NodeMockProtocolConfiguration(..), ProtocolFilepaths(..),
-                    Protocol(..), MockProtocol(..), SomeConsensusProtocol(..),
-                    SomeNodeClientProtocol(..), TraceConstraints)
-import           Cardano.Chain.Slotting (EpochSlots(..))
+                    MockProtocol(..), SomeConsensusProtocol(..))
 
-import           Cardano.Api.Protocol.Byron
-import           Cardano.Api.Protocol.Cardano
 import           Cardano.Api.Protocol.Mock
-import           Cardano.Api.Protocol.Shelley
+import           Cardano.Api.Protocol.Types
 
-import qualified Ouroboros.Consensus.Cardano as Consensus
-
+import           Cardano.Node.Protocol.Byron
+import           Cardano.Node.Protocol.Cardano
+import           Cardano.Node.Protocol.Shelley
 
 ------------------------------------------------------------------------------
 -- Conversions from configuration into specific protocols and their params
