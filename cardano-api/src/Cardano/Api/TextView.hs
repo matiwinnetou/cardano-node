@@ -3,14 +3,14 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RankNTypes #-}
 
-module Cardano.Config.TextView
+module Cardano.Api.TextView
   ( -- * \"TextView\" format
     TextView (..)
   , TextViewError (..)
   , TextViewType (..)
   , TextViewTitle (..)
   , parseTextView
-  , renderTextView
+  , renderTextViewFV
   , renderTextViewError
   , expectTextViewOfType
   , expectTextViewOfTypes

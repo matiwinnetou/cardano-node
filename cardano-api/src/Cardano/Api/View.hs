@@ -47,7 +47,7 @@ import           Cardano.Api.CBOR
 import           Cardano.Api.Types
 import           Cardano.Api.Error
 
-import           Cardano.Config.TextView
+import           Cardano.Api.TextView
 
 import           Cardano.Prelude
 

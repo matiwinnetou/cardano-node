@@ -23,7 +23,7 @@ module Test.Cardano.Config.Gen
 
 import           Cardano.Prelude
 
-import           Cardano.Config.TextView
+import           Cardano.Api.TextView
 import           Cardano.Config.Topology
 import           Cardano.Config.Types
 

@@ -55,7 +55,7 @@ import           Cardano.Config.Shelley.Genesis
 import           Cardano.Api.Shelley.ColdKeys
 import           Cardano.Config.Shelley.OCert
 import           Cardano.Config.Shelley.VRF
-import           Cardano.Config.TextView (TextViewTitle (..))
+import           Cardano.Api.TextView (TextViewTitle (..))
 
 import           Cardano.CLI.Helpers (textToByteString)
 import           Cardano.CLI.Shelley.Commands
